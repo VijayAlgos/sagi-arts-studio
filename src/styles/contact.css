@@ -1,0 +1,128 @@
+.contact-section {
+  padding: 90px 40px;
+  background: #b8ccc1;
+}
+
+.contact-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: black;
+  font-weight: 600;
+}
+
+.contact-card {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 30px;
+  align-items: center;
+
+  padding: 35px;
+  border-radius: 28px;
+
+  background: linear-gradient(
+  135deg,
+  rgba(255,255,255,0.50),
+  rgba(184,204,193,0.25),
+  rgba(255,255,255,0.25)
+  );
+
+  border: 1px solid rgba(255,255,255,0.45);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow: 0 12px 40px rgba(77,186,245,0.18);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  outline: none;
+  font-size: 16px;
+
+  background: #fffaf5;
+  color: #111;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #777;
+}
+
+.contact-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: #006eef;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0050b8;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-right h2{
+  color: #111;
+  font-weight: 500;
+}
+
+/* .contact-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+} */
+
+.contact-social {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-social a img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.contact-social h2 {
+  margin-bottom: 10px;
+}
+
+
+.contact-social a:hover {
+  transform: translateY(-8px) scale(1.08);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+}
