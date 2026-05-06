@@ -1,3 +1,3 @@
 # Sagi Art Studio
 
-My portfolio website for wall art, mandala designs and creative works.
+Artist portfolio website for wall art, mandala designs and creative works.
