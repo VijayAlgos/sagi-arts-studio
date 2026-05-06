@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap; 
   padding: 18px 40px;
 
   position: fixed;
@@ -27,7 +28,9 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+
+  flex: 0;              /* ⭐ take available space */
 }
 
 .logo-img {
@@ -41,6 +44,7 @@
   color: #000000;
   font-size: 30px;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .logo-img:hover {
@@ -85,13 +89,26 @@
 @media (max-width: 768px) {
 
   .navbar{
-    padding: 15px 20px;
+    padding: 12px 16px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   /* ⭐ ... */
+  }
+
+  .logo-img {
+    width: 35px;
+    height: 35px;
   }
 
   .menu-icon {
     display: block;
     margin-left: auto;
-    z-index: 1002; /* ⭐ always visible */
+    font-size: 26px;
+    
   }
 
   .nav-links {
@@ -101,11 +118,11 @@
   .side-menu {
     display: flex;   /* ⭐ must be flex */
     position: fixed;
-    top: 80px;
+    top: 15px;
     right: -260px;
 
-    width: 180px;
-    height: 48vh;
+    width: 160px;
+    height: 35vh;
 
     background: rgba(255, 255, 255, 0.25);
     border-left: 1px solid rgba(255,255,255,0.4);
@@ -121,8 +138,8 @@
   }
   
   .side-menu a {
-    padding: 12px;
-    border-radius: 15px;
+    padding: 5px;
+    border-radius: 10px;
 
     background: rgba(197, 196, 196, 0.568);
     border: 1px solid rgba(255, 255, 255, 0.582);

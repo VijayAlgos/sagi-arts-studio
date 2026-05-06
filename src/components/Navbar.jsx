@@ -25,6 +25,8 @@ function Navbar() {
         <h2 className="logo-text">Sagi Art Studio</h2>
       </div>
 
+     
+
       {/* desktop menu */}
       <div className="nav-links">
           <div className="nav-link">
@@ -41,7 +43,7 @@ function Navbar() {
           </div>
       </div>
 
-      {/* Mobile icon */}
+       {/* Mobile icon */}
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </div>

@@ -82,12 +82,46 @@
 }
 
 /* Mobile */
-@media (max-width: 900px) {
-  .about-card {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 20px;
   }
 
-  .about-left img video {
-    height: 350px;
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .about-left img,
+  .about-left video {
+    height: 250px;   /* ⭐ important */
+  }
+
+  .about-right h2 {
+    font-size: 22px;
+  }
+
+  .about-right p {
+    font-size: 15px;
+  }
+
+  .about-points {
+    grid-template-columns: 1fr;  /* ⭐ stack */
+  }
+
+  .about-points span {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-card {
+    grid-template-columns: 1fr;
   }
 }

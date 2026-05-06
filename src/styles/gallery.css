@@ -130,3 +130,45 @@
   font-size: 28px;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 50px 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-card img {
+    height: 180px;
+  }
+
+  .gallery-card h3 {
+    font-size: 20px;
+  }
+
+  .gallery-card h6 {
+    font-size: 13px;
+  }
+
+  .gallery-card p {
+    font-size: 14px;
+  }
+
+  .popup-box {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .popup-grid {
+    grid-template-columns: 1fr;
+  }
+}

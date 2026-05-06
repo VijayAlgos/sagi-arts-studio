@@ -121,8 +121,53 @@
 }
 
 /* Mobile */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
   .contact-card {
     grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  /* Form */
+  .contact-form form {
+    gap: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Right side */
+  .contact-right h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Icons */
+  .contact-social {
+    gap: 14px;
+    margin-top: 15px;
+  }
+
+  .contact-social a img {
+    width: 40px;
+    height: 40px;
   }
 }
