@@ -68,7 +68,7 @@ function Gallery() {
             key={index}
             onClick={() => setSelected(cat)}
           >
-            <img src={cat.cover} alt={cat.title} />
+            <img src={cat.cover} alt={cat.title} loading="lazy" />
             <h3>{cat.title}</h3>
             <h6>{cat.subTitle}</h6>
             <p>{cat.description}</p>
@@ -115,6 +115,7 @@ function Gallery() {
                         key={i}
                         src={item}
                         alt="art"
+                        loading="lazy" 
                         className="popup-media"
                     />
                     )

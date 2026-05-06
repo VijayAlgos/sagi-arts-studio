@@ -10,6 +10,7 @@ function Hero() {
             muted
             loop
             playsInline
+            preload="none" 
        >
         <source src={heroVideo} type="video/mp4" />
        </video>
